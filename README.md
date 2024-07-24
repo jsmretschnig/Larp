@@ -1,4 +1,4 @@
-# Last-Mile Aerial Routing (LAR) - Path Planning Algorithm
+# Last-Mile Restrictive Path Planning Algorithm
 
 A general demo can be found at [`presentation.ipynb`](https://github.com/wzjoriv/Larp/blob/main/presentation.ipynb).
 
