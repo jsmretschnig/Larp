@@ -22,6 +22,7 @@ class RGJGeometry():
         self.eye_repulsion = np.eye(len(self.repulsion))
         self.properties = {} if properties is None else properties
         self.grad_matrix = self.inv_repulsion + self.inv_repulsion.T
+        
         bbox = self.coordinates.reshape(-1, 2)
         self.bbox = np.array([bbox.min(0), bbox.max(0)])
 
@@ -242,7 +243,7 @@ class MultiLineStringRGJ(LineStringRGJ):
         
         self.lines_n = sum([len(coords)-1 for coords in self.coordinates])
         self.points_in_line_pair = np.concatenate([[coords[:-1], coords[1:]] for coords in self.coordinates], axis=1).swapaxes(0, 1)
-        
+
         self.bbox = np.concatenate([np.array([coords.min(0), coords.max(0)]) for coords in self.coordinates])
 
     def set_coordinates(self, new_coords):
