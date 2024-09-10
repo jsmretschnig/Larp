@@ -13,3 +13,21 @@ pip install larp
 ```
 
 ![alt text](https://github.com/wzjoriv/Larp/blob/main/docs/imgs/route_graph.png?raw=true)
+
+## Citations
+
+```
+@article{rivera2024multi,
+  title={Multi-Scale Cell Decomposition for Path Planning using Restrictive Routing Potential Fields},
+  author={Rivera, Josue N and Sun, Dengfeng},
+  journal={arXiv preprint arXiv:2408.02786},
+  year={2024}
+}
+
+@article{rivera2024air,
+  title={Air Traffic Management for Collaborative Routing of Unmanned Aerial Vehicles via Potential Fields},
+  author={Rivera, Josue N and Sun, Dengfeng},
+  journal={arXiv preprint arXiv:2403.11086},
+  year={2024}
+}
+```
