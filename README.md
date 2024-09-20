@@ -24,10 +24,12 @@ pip install larp
   year={2024}
 }
 
-@article{rivera2024air,
+@inproceedings{rivera2024air,
   title={Air Traffic Management for Collaborative Routing of Unmanned Aerial Vehicles via Potential Fields},
   author={Rivera, Josue N and Sun, Dengfeng},
-  journal={arXiv preprint arXiv:2403.11086},
-  year={2024}
+  year={2024},
+  language={English},
+  booktitle={International Conference for Research in Air Transportation},
+  publisher={ICRAT}
 }
 ```
