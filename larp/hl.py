@@ -172,7 +172,7 @@ class HotLoader(object):
             for child in quad.children:
                 recursive_update_rgj_index(child)
 
-        def update_quad(rootquad:QuadNode, delquad:QuadNode):
+        def update_quad(rootquad:Optional[QuadNode], delquad:Optional[QuadNode]):
             """
             Returns whether to consider merging quads or not 
             """
