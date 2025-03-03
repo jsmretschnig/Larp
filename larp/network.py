@@ -201,7 +201,7 @@ class RoutingNetwork(Network):
 
     def calculate_distance(self, node_from:QuadNode, node_to:QuadNode, scale_tranform:FieldScaleTransform=lambda x: 1.0 + x, scaled=True):
         if scaled:
-            multipler = np.Inf if node_to.boundary_zone == 0 else scale_tranform(node_to.boundary_max_range)
+            multipler = np.inf if node_to.boundary_zone == 0 else scale_tranform(node_to.boundary_max_range)
         else:
             multipler = 1.0
 
@@ -235,10 +235,10 @@ class RoutingNetwork(Network):
         heapq.heappush(open_set, (0, start_node))
 
         came_from = {}
-        g_score = defaultdict(lambda: np.Inf)
+        g_score = defaultdict(lambda: np.inf)
         g_score[start_node] = 0
 
-        f_score = defaultdict(lambda: np.Inf)
+        f_score = defaultdict(lambda: np.inf)
         f_score[start_node] = self.calculate_distance(start_node, end_node, scaled=False)
 
         while open_set:
@@ -269,7 +269,7 @@ class RoutingNetwork(Network):
         heapq.heappush(open_set, (0, start_node))
 
         came_from = {}
-        dist = defaultdict(lambda: np.Inf)
+        dist = defaultdict(lambda: np.inf)
         dist[start_node] = 0
 
         while open_set:
